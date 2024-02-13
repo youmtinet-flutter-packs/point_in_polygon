@@ -11,11 +11,11 @@ void main() {
 
   test('Point inside the polygon', () {
     final Point point = Point(x: -71.60473921902548, y: 42.38951132221119);
-    expect(Poly.isPointInPolygon(point, points), true);
+    expect(isPointInPolygon(point, points), true);
   });
 
   test('Point outside the polygon', () {
     final Point point = Point(x: -71.76850417263876, y: 42.38925775080263);
-    expect(Poly.isPointInPolygon(point, points), false);
+    expect(isPointInPolygon(point, points), false);
   });
 }
